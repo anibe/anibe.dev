@@ -1,0 +1,22 @@
+{
+  "name": "anibe.dev",
+  "version": "1.0.0",
+  "description": "anibe.dev",
+  "main": "index.html",
+  "dependencies": {
+    "tailwindcss": "^1.1.4"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.25.1-test.1"
+  },
+  "scripts": {
+    "build": "npm run build-styles && parcel build src/index.html",
+    "build-dev": "npm run build-styles",
+    "dev": "npm run build-dev && parcel src/index.html",
+    "build-styles": "npx tailwind build src/styles/tailwind/tailwind.css -o src/tailwind.css",
+    "test": "test"
+  },
+  "author": "Anibe Agamah",
+  "license": "ISC"
+}
