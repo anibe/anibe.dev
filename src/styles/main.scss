@@ -1,1 +1,9 @@
-@import "base/typography.scss"
+@import "base/typography.scss";
+
+.card {
+    border: 1px solid #ccc;
+
+    &:hover {
+        background-color: #eee;
+    }
+}

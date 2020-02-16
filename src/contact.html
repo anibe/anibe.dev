@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>anibe.dev</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="styles/main.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container mx-auto px-4 text-center my-12">
+        <h1>
+            <a href="/">
+                anibe.dev
+            </a>
+        </h1>
+        <h2 class="text-gray-600">Send me a message</h2>
+
+        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" netlify>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                    Your name
+                </label>
+                <input required name="name"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="name" type="text" placeholder="Name">
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                    Email
+                </label>
+                <input required name="email"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="email" type="text" placeholder="Email">
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+                    Message
+                </label>
+                <input required name="message"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="message">
+            </div>
+            <div class="flex items-center justify-between">
+                <button type="submit"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    type="button">
+                    Send
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
