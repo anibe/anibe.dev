@@ -4,16 +4,18 @@
   "description": "anibe.dev",
   "main": "index.html",
   "dependencies": {
-    "parcel-bundler": "^1.12.4",
+    "parcel-bundler": "^1.8.1",
     "tailwindcss": "^1.1.4"
   },
   "devDependencies": {
-    "cssnano": "^4.1.10",
+    "cssnano": "^5.1.14",
+    "ncp": "^2.0.0",
     "sass": "^1.25.1-test.1"
   },
   "scripts": {
-    "build": "npm run build-styles && parcel build src/index.html",
+    "build": "npm run build-styles && npm run copy && parcel build src/index.html",
     "build-dev": "npm run build-styles",
+    "copy": "ncp src/static dist",
     "dev": "npm run build-dev && parcel src/index.html",
     "build-styles": "npx tailwind build src/styles/tailwind/tailwind.css -o src/tailwind.css",
     "test": "test"
