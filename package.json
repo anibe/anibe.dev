@@ -4,8 +4,8 @@
   "description": "anibe.dev",
   "main": "index.html",
   "dependencies": {
-    "parcel-bundler": "^1.8.1",
-    "tailwindcss": "^1.1.4"
+    "parcel-bundler": "^1.12.5",
+    "tailwindcss": "^1.9.6"
   },
   "devDependencies": {
     "cssnano": "^5.1.14",
